@@ -1,0 +1,90 @@
+.verification-page {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.verification-container {
+  text-indent: 3%;
+}
+
+.verification-header {
+  padding-top: 3%;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.verification-header span {
+  font-size: 40px;
+  background-image: linear-gradient(to right, blue, rgb(162, 0, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.verification-container .text {
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.text span {
+  font-weight: 600;
+}
+
+.verification-container form {
+  display: flex;
+  padding-left: 3%;
+  gap: 20px;
+}
+
+.verification-container .submission-form label input {
+  height: 30px;
+  width: 175px;
+  font-size: 15px;
+  border: 1px solid black;
+  transition: width 0.3s ease, height 0.3s ease, font-size 0.3s ease;
+}
+
+
+.verification-container .submission-form label input:focus {
+  outline-color: blueviolet;
+  height: 40px;
+  width: 200px;
+  font-size: 19px;
+  padding-left: 5px;
+}
+
+.verification-container .submission-form button {
+  height: 30px;
+  width: 100px;
+  border-radius: 50px;
+  border: 2px solid black;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease;
+}
+
+.verification-container .submission-form button:hover {
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  background-color: #eaeaea;
+}
+
+.error,
+.success {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: blueviolet;
+}
+
+

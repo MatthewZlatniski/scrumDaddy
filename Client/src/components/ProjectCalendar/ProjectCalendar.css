@@ -1,0 +1,22 @@
+.rbc-date-cell {
+    color: #333; /* or any color that provides sufficient contrast against white */
+  }
+  
+  .rbc-today {
+    background-color: #e3f2fd; /* a light background color for today's date for visibility */
+  }
+  .rbc-off-range-bg {
+    background-color: #f5f5f5; /* slightly grey to differentiate days not in the current month */
+  }
+  .calendar-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .add-event-button {
+    margin-left: 100px; /* Pushes the button to the right */
+    margin-top: 100px;
+  }
+  

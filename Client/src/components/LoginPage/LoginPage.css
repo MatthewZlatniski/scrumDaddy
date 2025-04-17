@@ -1,0 +1,234 @@
+.login-page {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, rgb(0, 0, 172), rgb(106, 0, 106));
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: auto;
+  display: flex;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  min-width: 1200px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  background: #ccc;
+}
+
+.login-container.left {
+  flex-direction: row-reverse;
+}
+
+.login-container.right {
+  flex-direction: row;
+}
+
+/* begin right side of login container design */
+
+.login-container .right-side-container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.login-container.left .right-side-container {
+  background: linear-gradient(to bottom right, rgb(13, 0, 255), rgb(144, 0, 255));
+}
+
+.login-container.right .right-side-container {
+  background: linear-gradient(to bottom right, rgb(72, 0, 255)10%, rgb(221, 0, 255) 100%);
+}
+
+
+.login-container .right-side-header .text {
+  margin: auto;
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.right-side-container .underline {
+  margin-top: 10px;
+  margin: auto;
+  width: 150px;
+  height: 5px;
+  background: #fff;
+  border-radius: 9px;
+}
+
+.right-side-container .error-message {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.right-side-container .submission-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-side-container .submission-form label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(254, 254, 254, 0.1);
+  width: 400px;
+  height: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+}
+
+.right-side-container .submission-form label img {
+  margin: 0 20px;
+}
+
+.right-side-container .submission-form label input {
+  height: 55px;
+  width: 320px;
+  background-color: transparent;
+  border: none;
+  font-size: 19px;
+  color: #fff;
+}
+
+.right-side-container .submission-form label input::placeholder {
+  color: #fff;
+}
+
+.right-side-container .submission-form label input:focus {
+  outline: none;
+}
+
+.right-side-container .submission-form button {
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: #333;
+  width: 220px;
+  height: 59px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.5s ease;
+  transition: width 0.5s ease, height 0.5s ease, font-size 0.5s ease;
+}
+
+.right-side-container .submission-form button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 200px;
+  height: 49px;
+  font-size: 16px;
+}
+
+.right-side-container .forgot-password {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.right-side-container .forgot-password span {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* begin left side of login container design */
+
+.login-container .left-side-container {
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  z-index: 2;
+  transform: translateX(0%);
+}
+
+
+
+.left-side-container .left-side-header {
+  margin-top: 200px;
+  font-size: 35px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, blue, rgb(162, 0, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.left-side-container .underline {
+  margin-top: 10px;
+  width: 150px;
+  height: 5px;
+  background: linear-gradient(to bottom right, blue, rgb(162, 0, 255));
+  border-radius: 9px;
+}
+
+.left-side-container p {
+  text-align: center;
+  color: blue;
+  font-size: 19px;
+  width: 375px;
+  margin-bottom: 20px;
+}
+
+.left-side-container button {
+  margin-top: 30px;
+  align-items: center;
+  margin-bottom: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ccc;
+  border: 2px solid blue;
+  border-radius: 50px;
+  overflow: hidden;
+  color: #333;
+  width: 220px;
+  height: 59px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  color: blue;
+  transition:  border 0.5s ease;
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
+  transition: width 0.5s ease, height 0.5s ease, margin-bottom 0.5s ease, font-size 0.5s ease;
+}
+
+.left-side-container button:hover {
+  background-color: rgba(255, 255, 255, 0.5);;
+  color: rgb(162, 0, 255);
+  border: 2px solid rgb(162, 0, 255);
+  width: 200px;
+  height: 49px;
+  font-size: 16px;
+  margin-bottom: 210px;
+}
