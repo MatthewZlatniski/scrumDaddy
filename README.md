@@ -1,4 +1,4 @@
-## Scrum Daddy
+## Scrum Daddy (without database connect in the Server/Index.js for protection reasons)
 
 ## Available Scripts
 
