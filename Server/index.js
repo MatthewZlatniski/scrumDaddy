@@ -47,21 +47,6 @@ io.on("connection", (socket) => {
   });
 });
 
-
-
-/*
-const con = mysql.createConnection({
-  database: "scrum",
-  user: "z7wb67f7bpgammo92lzo",
-  host: "aws.connect.psdb.cloud",
-  password: "pscale_pw_aAwqvhlali36Yn9BNDeARs2RjaxZIp3LBzuU9gMkCZm",
-
-  ssl: {
-
-    rejectUnauthorized: true,
-  }
-}); */
-
 con.connect((err) => {
   if (err) return console.error(err.message);
 
